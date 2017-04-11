@@ -10,6 +10,38 @@
 	{{ message }}
 	</div>
 
+	<br />
+
+	<div id="app2">
+		<span v-bind:title="message">
+			Hover ME to see stuff
+		</span>
+	</div>
+
+	<br />
+
+	<div id="app3">
+		<p v-if="seen">Now you see me</p>
+	</div>
+
+	<div id="app4">
+		<ol>
+			<li v-for="todo in todos">
+				{{ todo.text }}
+			</li>
+		</ol>
+	</div>
+
+	<div id="app5">
+		<p>{{ message }}</p>
+		<button v-on:click="reverseMessage">Reverse Message</button>
+	</div>
+
+	<div id="app6">
+		<p>{{ message }}</p>
+		<input v-model="message">
+	</div>
+
 	<script src="https://unpkg.com/vue"></script>
 	<script src="js/main.js"></script>
 
